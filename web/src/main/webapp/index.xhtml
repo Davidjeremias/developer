@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
+<h:head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>U2D Tecnologia</title>
+</h:head>
+<h:body>
+	<h:form>
+		<p:panelGrid columns="2">
+			<p:outputLabel value="Nome:"></p:outputLabel>
+			<p:inputText id="nome" value="#{pessoaBean.pessoa.nome}"></p:inputText>
+			
+			<p:outputLabel value="Cpf:"></p:outputLabel>
+			<p:inputText id="cpf" value="#{pessoaBean.pessoa.cpf}"></p:inputText>
+			
+			<p:outputLabel value="Logradouro:"></p:outputLabel>
+			<p:inputText id="logradouro" value="#{enderecoBean.endereco.logradouro}"></p:inputText>
+			
+			<p:outputLabel value="Numero:"></p:outputLabel>
+			<p:inputText id="numero" value="#{enderecoBean.endereco.numero}"></p:inputText>
+			
+			<p:outputLabel value="Cidade:"></p:outputLabel>
+			<p:inputText id="cidade" value="#{enderecoBean.endereco.cidade}"></p:inputText>
+			
+			<p:commandButton value="Enviar" action="#{pessoaBean.AddPessoa()}"></p:commandButton>
+		</p:panelGrid>
+	</h:form>
+</h:body>
+</html>
