@@ -1,0 +1,27 @@
+@charset "ISO-8859-1";
+
+*{
+
+	font-size: 15px;
+	font-family: arial;
+	font-weight: bold;	
+
+
+}
+
+.botoes{
+	
+	background-color: #0000FF;
+	
+	color: #FFFF00;
+	
+}
+
+#barra{
+	background-color: #FF6666;
+}
+
+.panel panel-primary{
+	right: 200px;
+	
+}
